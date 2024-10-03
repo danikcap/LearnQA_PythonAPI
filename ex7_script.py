@@ -21,4 +21,6 @@ for m in methods:
         if m != p and response4.text == '{"success":"!"}':
             print(response4.text)
             print(m, p)
-
+        elif m == p and response4.text != '{"success":"!"}':
+            print(response4.text)
+            print(m, p)
